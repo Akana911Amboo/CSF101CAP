@@ -37,20 +37,20 @@ def calculate_score(input_data):
         # Conditional statement used  to give proper instructions 
         if outcome == 'X':  # you need to lose
             if opponent_move == 'A':  # Opponent chooses Rock
-                player_move = 'B'  # You choose Paper
+                player_move = 'C'  # You choose Scissor
             elif opponent_move == 'B':  # Opponent chooses Paper
-                player_move = 'C'  # You choose Scissors
-            elif opponent_move == 'C':  # Opponent chooses Scissors
                 player_move = 'A'  # You choose Rock
+            elif opponent_move == 'C':  # Opponent chooses Scissors
+                player_move = 'B'  # You choose Paper
         elif outcome == 'Y':  # you need to draw
             player_move = opponent_move  # You choose the same as opponent
         elif outcome == 'Z':  # you need to win
             if opponent_move == 'A':  # Opponent chooses Rock
-                player_move = 'C'  # You choose Scissors
-            elif opponent_move == 'B':  # Opponent chooses Paper
-                player_move = 'A'  # You choose Rock
-            elif opponent_move == 'C':  # Opponent chooses Scissors
                 player_move = 'B'  # You choose Paper
+            elif opponent_move == 'B':  # Opponent chooses Paper
+                player_move = 'C'  # You choose Scissor
+            elif opponent_move == 'C':  # Opponent chooses Scissors
+                player_move = 'A'  # You choose Rock
 
         player_score = scores[player_move] + outcomes[outcome]
         total_score += player_score 
