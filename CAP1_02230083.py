@@ -12,6 +12,8 @@
 #########################################
 # Solution
 # The total score is : 49589
+# Put your number here:
+# input_3_cap1.txt
 #########################################
 
 # Read the input.txt file
