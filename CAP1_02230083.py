@@ -11,7 +11,7 @@
 # CSF101 Unit Guides and Notes
 #########################################
 # Solution
-# The total score is : 49589
+# The total score is : 49483
 # Put your number here:
 # input_3_cap1.txt
 #########################################
